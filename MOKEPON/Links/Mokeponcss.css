@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+#verMapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mapa{
+    border: 4px solid white;
+    padding: 250px;
+}
+
+body {
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+}
+button:hover{
+    background-image: linear-gradient(#727272, #333333);
+}
+button:active{
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+input:hover + label{
+    background-image: linear-gradient(#727272, #333333);
+    
+}
+input:checked + label{
+    background-image: linear-gradient(#ffffff, #ffffff);
+}
+.titulosPagina2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.pagina2Style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo11{
+    color: rgb(201, 201, 201);
+    background-image: radial-gradient(circle, black -59%, #7a7a7a00 100%);
+    font-size: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 38px;
+    border: 3px solid #2d2d2d;
+    box-shadow: 2px 6px 10px black;
+    font-family: "Oswald", sans-serif;
+    padding-left: 62px;
+    padding-right: 62px;
+    margin: 4px;
+}
+.subtituloEligeMascota, .subtitulo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 42px;
+    background-image: linear-gradient(#8f8f8f00, #393939);
+    border-radius: 47px;
+    box-shadow: 2px 6px 10px black;
+    border: 3px solid #2d2d2d;
+    padding: 32px;
+    margin: 4px;
+    height: 10px;
+}
+
+.combate{
+    background-color: rgb(75, 75, 75);
+    color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    transition-timing-function: ease-in;
+    align-content: center;
+    align-items: center;
+}
+.SeleccionarMascotaStyle{
+    background-color: rgb(75, 75, 75);
+    color: rgb(201, 201, 201);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+    align-items: center;
+}
+.Mascotas{
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    height: 30px;
+    width: 150px;
+}
+input{
+    height: 30px;
+    width: 150px;
+}
+button{
+    height: 30px;
+    width: 150px;
+}
+.botones-mascotas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #b1b1b1;
+    border: 3px solid #2d2d2d;
+    box-sizing: border-box;
+    margin: 28px;
+    font-size: 36px;
+    justify-content: center;
+    box-shadow: 2px 6px 10px;
+    background-image: linear-gradient(#fbfbfb, #6d6d6d);
+    padding: 100px;
+    margin: 4px;
+}
+.nombreMascotas{
+    margin: 4px;
+}
+.botones-mascotas img{
+    width: 90px;
+}
+.mascotaSeleccion{
+    display: none;
+}
+.botones-SeleccionMascota{
+    font-size: 32px;
+    background-image: linear-gradient(#555555, #ffffff);
+    border-radius: 47px;
+    border: 3px solid #2d2d2d;
+    box-shadow: 2px 6px 10px black;
+    font-family: "Oswald", sans-serif;
+    padding: 32px 112px 32px 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mensajes-vidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botones-combate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.GanadorPerdedor{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    background-image: linear-gradient(#555555, #ffffff);
+    border-radius: 47px;
+    border: 3px solid #2d2d2d;
+    box-shadow: 2px 6px 10px black;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    justify-content: center;
+    margin: 4px;
+}
+.resultadoFinal{
+    margin: 5px;
+}
+.mensajeResultado{
+    margin: 0px 32px 0px 32px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.mensajeCombate{
+    margin: 8px;
+    margin-top: -6px;
+}
+.reiniciar, .Botones-ataques{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    background-image: linear-gradient(#555555, #ffffff);
+    border-radius: 47px;
+    border: 3px solid #2d2d2d;
+    box-shadow: 2px 6px 10px black;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+    margin: 4px;
+}
+.mensajesCombateStyle{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.vidasJugadorStyle, .vidasEnemigoStyle{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    background-image: linear-gradient(#555555, #ffffff);
+    border-radius: 47px;
+    border: 3px solid #2d2d2d;
+    box-shadow: 2px 6px 10px black;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 4px;
+}
+.vidas-peleadores{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 4px;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-color: rgb(75, 75, 75);
+        display: flex;
+        flex-direction: column;
+    }
+    button:hover{
+        background-image: linear-gradient(#727272, #333333);
+    }
+    button:active{
+        background-image: linear-gradient(#ffffff, #ffffff);
+    }
+    input:hover + label{
+        background-image: linear-gradient(#727272, #333333);
+        
+    }
+    input:checked + label{
+        background-image: linear-gradient(#ffffff, #ffffff);
+    }
+    .titulosPagina2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagina2Style{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo11{
+        color: rgb(201, 201, 201);
+        background-image: radial-gradient(circle, black -59%, #7a7a7a00 100%);
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 38px;
+        border: 3px solid #2d2d2d;
+        box-shadow: 2px 6px 10px black;
+        font-family: "Oswald", sans-serif;
+        padding-left: 62px;
+        padding-right: 62px;
+        margin: 4px;
+    }
+    .subtituloEligeMascota, .subtitulo2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 27px;
+        background-image: linear-gradient(#8f8f8f00, #393939);
+        border-radius: 47px;
+        box-shadow: 2px 6px 10px black;
+        border: 3px solid #2d2d2d;
+        padding: 16px;
+        margin: 4px;
+        height: 10px;
+    }
+
+    .combate{
+        background-color: rgb(75, 75, 75);
+        color: rgb(201, 201, 201);
+        display: flex;
+        flex-direction: column;
+        transition-timing-function: ease-in;
+        align-content: center;
+        align-items: center;
+    }
+    .SeleccionarMascotaStyle{
+        background-color: rgb(75, 75, 75);
+        color: rgb(201, 201, 201);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: "Oswald", sans-serif;
+        align-items: center;
+    }
+    .Mascotas{
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    label{
+        height: 30px;
+        width: 150px;
+    }
+    input{
+        height: 30px;
+        width: 150px;
+    }
+    button{
+        height: 30px;
+        width: 150px;
+    }
+    .botones-mascotas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #b1b1b1;
+        border: 3px solid #2d2d2d;
+        box-sizing: border-box;
+        margin: 28px;
+        font-size: 27px;
+        justify-content: center;
+        box-shadow: 2px 6px 10px;
+        background-image: linear-gradient(#fbfbfb, #6d6d6d);
+        padding: 80px;
+        margin: 4px;
+    }
+    .nombreMascotas{
+        margin: 4px;
+    }
+    .botones-mascotas img{
+        width: 90px;
+    }
+    .mascotaSeleccion{
+        display: none;
+    }
+    .botones-SeleccionMascota{
+        font-size: 32px;
+        background-image: linear-gradient(#555555, #ffffff);
+        border-radius: 47px;
+        border: 3px solid #2d2d2d;
+        box-shadow: 2px 6px 10px black;
+        font-family: "Oswald", sans-serif;
+        padding: 32px 112px 32px 112px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mensajes-vidas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vidas-peleadores{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 4px;
+        font-size: 18px;
+    }
+    .botones-combate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .GanadorPerdedor{
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+        background-image: linear-gradient(#555555, #ffffff);
+        border-radius: 47px;
+        border: 3px solid #2d2d2d;
+        box-shadow: 2px 6px 10px black;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        justify-content: center;
+        margin: 4px;
+    }
+    .resultadoFinal{
+        margin: 5px;
+    }
+    .mensajeResultado{
+        margin: 0px 32px 0px 32px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mensajeCombate{
+        margin: 8px;
+        margin-top: -6px;
+    }
+    .reiniciar, .Botones-ataques{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 24px;
+        background-image: linear-gradient(#555555, #ffffff);
+        border-radius: 47px;
+        border: 3px solid #2d2d2d;
+        box-shadow: 2px 6px 10px black;
+        font-family: "Oswald", sans-serif;
+        padding: 20px;
+        margin: 4px;
+    }
+    .mensajesCombateStyle{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .vidasJugadorStyle, .vidasEnemigoStyle{
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        background-image: linear-gradient(#555555, #ffffff);
+        border-radius: 47px;
+        border: 3px solid #2d2d2d;
+        box-shadow: 2px 6px 10px black;
+        font-family: "Oswald", sans-serif;
+        color: black;
+        padding: 10px;
+        margin: 4px;
+    }
+}
